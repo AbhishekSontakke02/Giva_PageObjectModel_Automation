@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Abhi/IdeaProjects/Giva_PageObjectModel_Automation">
+        <classes>
+            <class name="com.giva.qa.testcases.AddToCartPageTest">
+                <methods>
+                    <include name="AddToCartTest"/>
+                    <include name="cartTest"/>
+                </methods>
+            </class>
+            <class name="com.giva.qa.testcases.CheckoutPageTest">
+                <methods>
+                    <include name="CheckoutForGuestTest"/>
+                    <include name="CheckoutForUserTest"/>
+                </methods>
+            </class>
+            <class name="com.giva.qa.testcases.LoginPageTest">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="wishListShoppingTest"/>
+                    <include name="LoginWithMultipleUser"/>
+                    <include name="UserLogin1"/>
+                    <include name="getTitles"/>
+                </methods>
+            </class>
+            <class name="com.giva.qa.testcases.RegisterPageTest">
+                <methods>
+                    <include name="registerTest"/>
+                </methods>
+            </class>
+            <class name="com.giva.qa.testcases.SearchPageTest">
+                <methods>
+                    <include name="searchByGuestTest"/>
+                    <include name="searchByUserTest"/>
+                </methods>
+            </class>
+            <class name="com.giva.qa.testcases.StorePageTest">
+                <methods>
+                    <include name="FindStoreTest"/>
+                    <include name="givaGiftStore"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
