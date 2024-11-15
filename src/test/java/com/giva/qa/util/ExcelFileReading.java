@@ -1,4 +1,4 @@
-package util;
+package com.giva.qa.util;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -81,5 +81,14 @@ public class ExcelFileReading {
     @DataProvider(name = "RegisterData")
     public static Object[][] RegisterData() throws IOException {
         return getData("Sheet2");
+    }
+    @DataProvider(name = "CheckoutGuestData")
+    public static Object[][] CheckoutGuestData() throws IOException {
+        return getData("Sheet3");
+    }
+
+    @DataProvider(name = "CheckoutUserData")
+    public static Object[][] CheckoutUserData() throws IOException {
+        return getData("Sheet4");
     }
 }
